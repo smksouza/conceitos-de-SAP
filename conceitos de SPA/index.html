@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="/conceitos de SPA/index.html" onclick="route()">Home</a>
+        <a href="/conceitos de SPA/about.html" onclick="route()">Sobre</a>
+        <a href="/conceitos de SPA/contact.html" onclick="route()">contato</a>
+        <a href="/conceitos de SPA/404.html" onclick="route()">404</a>
+    </nav>
+
+    <div id="app"></div>
+
+    <h1>Contato</h1>
+<p>Entre em contato comigo</p>
+
+<form action="" onsubmit="route()">
+    <div>
+        <input type="text" placeholder="Nome">
+    </div>
+    <div>
+        <input type="email" placeholder="email">
+    </div>
+    <div>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+    </div>
+    <div>
+        <button>Enviar</button>
+    </div>
+</form>
+
+    <script>
+        function route(event) {
+            event = event || window.event
+            event.preventDefault()
+        }
+    </script>
+</body>
+</html>
